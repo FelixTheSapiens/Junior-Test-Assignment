@@ -1,0 +1,12 @@
+footer {
+    height: 4rem;
+    width: 100%;
+    background-color: var(--bs-blue);
+    bottom: 0;
+    position: fixed;
+    color: var(--bs-white);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

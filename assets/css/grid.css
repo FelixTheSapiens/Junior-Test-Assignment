@@ -1,0 +1,29 @@
+.grid {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1rem));
+    grid-gap: 1rem;
+}
+
+.card {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.3rem;
+    width: 13rem;
+    height: 13rem;
+    background-color: #f1f1f1;
+}
+
+.card input {
+    order: -1;
+    align-self: flex-start;
+}
+
+.card div {
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

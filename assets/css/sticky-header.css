@@ -1,0 +1,24 @@
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: var(--bs-blue);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    margin-right: auto;
+    color: var(--bs-white);
+}
+
+.header-buttons {
+    margin-left: 0.5rem;
+}
+
+.header-buttons button {
+    background-color: var(--bs-white);
+    color: var(--bs-blue);
+    font-weight: bold;
+}

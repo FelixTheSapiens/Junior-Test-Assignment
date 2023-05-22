@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Product List</title>
+    <link href="assets/favicon.png" rel="icon" type="image/x-icon">
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/sticky-header.css" rel="stylesheet">
+    <link href="assets/css/footer.css" rel="stylesheet">
+    <script src="assets/js/jquery-3.7.0.min.js"></script>
+    <script src="assets/js/addproduct.js"></script>
+    <link href="assets/css/Beautiful-Alert.css" rel="stylesheet">
+    <link href="assets/css/alertify.min.css" rel="stylesheet"> 
+    <script src="assets/js/alertify.min.js"></script>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+
+<header>
+    <div class="sticky-header">
+        <h1 class="title">Product Add</h1>
+        <div class="header-buttons">
+            <button id="submitBtn" class="btn btn-primary shadow">Save</button>
+        </div>
+        <div class="header-buttons">
+            <a href="./index.html"><button class="delete-checkbox btn btn-primary shadow">Cancel</button></a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <section class="position-relative py-4 py-xl-5">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4">
+                    <div class="card mb-5">
+                        <div class="card-body shadow p-sm-5">
+                            <form id="product_form" method="post">
+                                <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                        data-bs-toggle="tooltip" data-bss-tooltip="" id="sku" name="SKU"
+                                        placeholder="SKU" required="" title="Should be unique for each product"
+                                        type="text"></div>
+                                <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                        data-bs-toggle="tooltip" data-bss-tooltip="" id="name" name="Name"
+                                        placeholder="Name" required="" title="Provide the name of the product"
+                                        type="text"></div>
+                                <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                        data-bs-toggle="tooltip" data-bss-tooltip="" id="price" min="0.00" name="Price"
+                                        placeholder="Price in $" required="" step="0.01"
+                                        title="Provide the price of the product" type="number" value=""></div>
+                                <div class="mb-3"><select class="form-select text-muted shadow-sm" id="productType"
+                                        required>
+                                        <option disabled hidden selected value="">Choose product type...</option>
+                                        <option value="DVD">DVD</option>
+                                        <option value="Furniture">Furniture</option>
+                                        <option value="Book">Book</option>
+                                    </select></div>
+                                <div id="additional_inputs">
+                                    <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                            data-bs-toggle="tooltip" data-bss-tooltip="" id="size" min="0.00"
+                                            name="size" placeholder="Size (MB)" required="" step="0.01"
+                                            title="Provide the size of the DVD" type="number" value="">
+                                    </div>
+                                    <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                            data-bs-toggle="tooltip" data-bss-tooltip="" id="height" min="0.00"
+                                            name="Height" placeholder="Height (CM)" required="" step="0.01"
+                                            title="Provide the height of the furniture" type="number" value=""></div>
+                                    <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                            data-bs-toggle="tooltip" data-bss-tooltip="" id="width" min="0.00"
+                                            name="Width" placeholder="Width (CM)" required="" step="0.01"
+                                            title="Provide the width of the furniture" type="number" value=""></div>
+                                    <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                            data-bs-toggle="tooltip" data-bss-tooltip="" id="length" min="0.00"
+                                            name="Length" placeholder="Length (CM)" required="" step="0.1"
+                                            title="Provide the length of the furniture" type="number" value=""></div>
+                                    <div class="mb-3"><input class="shadow-sm form-control" data-bs-placement="right"
+                                            data-bs-toggle="tooltip" data-bss-tooltip="" id="weight" min="0.00"
+                                            name="Weight" placeholder="Weight (KG)" required="" step="0.01"
+                                            title="Provide the weight of the book" type="number" value=""></div>
+                                </div>
+                                <button class="btn btn-primary d-none d-block w-100" id="submit" type="submit">Send
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<footer>
+    Scandiweb Test assignment
+</footer>
+
+</html>
